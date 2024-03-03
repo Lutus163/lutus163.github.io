@@ -32,7 +32,7 @@ btn3.addEventListener("click", function() {
 });
 
 btn4.addEventListener("click", function() {
-    item += 1400;
+    item += 1500;
     tg.MainButton.setText(String(item));
     tg.MainButton.show();
 });
