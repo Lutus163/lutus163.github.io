@@ -26,7 +26,7 @@ btn2.addEventListener("click", function() {
 })
 
 btn3.addEventListener("click", function() {
-    item += 1300;
+    item += 1200;
     tg.MainButton.setText(String(item));
     tg.MainButton.show();
 })
@@ -48,3 +48,8 @@ Telegram.WebApp.onEvent("mainButtonClicked", function(){
 
 })
 
+let usercard = document.getElementById("usercard");
+let p = document.createElement("p");
+p.innerText = `${tg.initDataUnsafe.user.first_name}
+${tg.initDataUnsafe.user.last_name}`;
+usercard.appendChild(p);
